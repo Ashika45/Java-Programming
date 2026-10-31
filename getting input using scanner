@@ -1,0 +1,50 @@
+// Online Java Compiler (Editor)
+// Write and run Java online using this editor.
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        
+        System.out.print("The example program for user Input...");
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("The number of main cameras active :");
+        byte cma = sc.nextByte();
+
+        System.out.println("The current battery temperature in Kelvin  :");
+        short temp = sc.nextShort();
+        
+        System.out.println("The total mission duration in seconds :");
+        int mission = sc.nextInt();
+     
+        System.out.println("The exact distance to the target planet in millimetres : ");    
+        long dis = sc.nextLong();
+        
+        System.out.println("The atmospheric pressure coefficient :");
+        float pressure = sc.nextFloat(); 
+        
+        System.out.println(" The absolute precise target coordinates or speed factor :");
+        double factor = sc.nextDouble();
+         
+        System.out.println(" The rover's mission quadrant code letter : ");
+        char a = sc.next().charAt(0);
+      
+        System.out.println("  The life-detection sensor status : ");
+        boolean status = sc.nextBoolean();
+        sc.nextLine(); // Perfect buffer clear!
+
+        System.out.println("What is your name ? : ");
+        String name = sc.nextLine();
+        
+        System.out.println("\n--- FINAL OUTPUT ---");
+        System.out.println(" cameras active : " + cma);
+        System.out.println(" temperature : " + temp);  
+        System.out.println(" mission duration : " + mission);  
+        System.out.println(" distance : " + dis);  
+        System.out.println(" pressure : " + pressure);
+        System.out.println(" speed factor : " + factor);
+        System.out.println(" code letter : " + a); // Fixed concatenation
+        System.out.println(" sensor status : " + status);
+        System.out.println(" name : " + name);
+    }
+}
