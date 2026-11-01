@@ -1,0 +1,19 @@
+// Online Java Compiler (Editor)
+// Write and run Java online using this editor.
+//import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+    System.out.println("Arithmetic operator...");
+    double a=10,b=2,c=3,d=5,e=8,f=9,g=6;
+        a+=3;
+        b-=6;
+        c*=2;
+        d/=4;
+        e%=8;
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+        System.out.println(d);
+        System.out.println(e);   
+    }
+}
