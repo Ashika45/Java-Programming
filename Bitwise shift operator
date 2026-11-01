@@ -1,0 +1,19 @@
+// Online Java Compiler (Editor)
+// Write and run Java online using this editor.
+
+class Main {
+    public static void main(String[] args) {
+        System.out.println("Bitwise  Operator");
+        int a=4;
+        int c=a<<1;
+        int d=a>>1;
+        int e=a>>>1;
+     
+        System.out.println(a);
+        System.out.println(c);
+        System.out.println(d);
+        System.out.println(e);
+       
+       
+    }
+}
