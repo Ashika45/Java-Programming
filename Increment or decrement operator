@@ -1,0 +1,18 @@
+// Online Java Compiler (Editor)
+// Write and run Java online using this editor.
+
+class Main {
+    public static void main(String[] args) {
+        System.out.println("Increment / decrement operator");
+        int a=10;
+        int b,c,d,e;
+        b=a++;
+        c=++a;
+        d=--a;
+        e=a--;
+         System.out.println(b);
+         System.out.println(c);
+         System.out.println(d);
+         System.out.println(e);
+    }
+}
