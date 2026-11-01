@@ -1,0 +1,16 @@
+// Online Java Compiler (Editor)
+// Write and run Java online using this editor.
+
+class Main {
+    public static void main(String[] args) {
+        System.out.println("Relational Operator");
+        int a=10,b=5;
+       
+         System.out.println(a>b);
+         System.out.println(a<b);
+         System.out.println(a==b);
+         System.out.println(a!=b);
+         System.out.println(a>=b);
+         System.out.println(a<=b);
+    }
+}
