@@ -1,0 +1,26 @@
+// Online Java Compiler (Editor)
+// Write and run Java online using this editor.
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+      //  System.out.println("Try clicking the Run button.");
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter num : ");
+        int num=sc.nextInt();
+        int absnum=Math.abs(num);
+        
+           if(num >=0 && num<=9 )
+           {
+               System.out.println("single digit ");
+           }
+            else if(num >=10 && num<=99 )
+           {
+               System.out.println("double digit ");
+           }
+        else 
+           {
+               System.out.println("multi digit ");
+           }
+        }
+       
+    }
