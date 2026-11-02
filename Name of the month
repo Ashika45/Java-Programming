@@ -1,0 +1,56 @@
+// Online Java Compiler (Editor)
+// Write and run Java online using this editor.
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a month number (1-12) : ");
+        
+        // Read the month number from the user
+        int month = sc.nextInt();
+        
+        // Check conditions for each month
+        if (month == 1) {
+            System.out.println("Month: January, Days: 31");
+        }
+        else if (month == 2) {
+            System.out.println("Month: February, Days: 28"); // Ignoring leap year
+        }
+        else if (month == 3) {
+            System.out.println("Month: March, Days: 31");
+        }
+        else if (month == 4) {
+            System.out.println("Month: April, Days: 30");
+        }
+        else if (month == 5) {
+            System.out.println("Month: May, Days: 31");
+        }
+        else if (month == 6) {
+            System.out.println("Month: June, Days: 30");
+        }
+        else if (month == 7) {
+            System.out.println("Month: July, Days: 31");
+        }
+        else if (month == 8) {
+            System.out.println("Month: August, Days: 31");
+        }
+        else if (month == 9) {
+            System.out.println("Month: September, Days: 30");
+        }
+        else if (month == 10) {
+            System.out.println("Month: October, Days: 31");
+        }
+        else if (month == 11) {
+            System.out.println("Month: November, Days: 30");
+        }
+        else if (month == 12) {
+            System.out.println("Month: December, Days: 31");
+        }
+        else {
+            System.out.println("Invalid month number! Please enter a number between 1 and 12.");
+        }
+        
+        sc.close();
+    }
+}
