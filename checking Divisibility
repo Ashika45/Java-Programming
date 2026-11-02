@@ -1,0 +1,12 @@
+// Online Java Compiler (Editor)
+// Write and run Java online using this editor.
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter a num : ");
+        int num=sc.nextInt();
+        boolean result=(num % 3 == 0 && num % 5 == 0  ) ? true : false ;
+         System.out.print(result);
+    }
+}
