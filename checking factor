@@ -1,0 +1,29 @@
+// Online Java Compiler (Editor)
+// Write and run Java online using this editor.
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+      //  System.out.println("Try clicking the Run button.");
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter num 1: ");
+        int a=sc.nextInt();
+        System.out.println("Enter num 2: ");
+        int b=sc.nextInt();
+        if(a==0 || b==0)
+        {
+            System.out.println("Zero cannot be a factor ");
+        }
+        else if(b%a==0)
+        {
+            System.out.println("a is a factor ");
+        }
+         else if(a%b==0)
+        {
+            System.out.println("b is a factor ");
+        }
+        else
+         {
+             System.out.println("nothing cannot be a factor ");
+         }
+    }
+}
