@@ -1,0 +1,33 @@
+// Online Java Compiler (Editor)
+// Write and run Java online using this editor.
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+      //  System.out.println("Try clicking the Run button.");
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter num : ");
+        int num=sc.nextInt();
+        int absnum=Math.abs(num);
+        if(num<1000 && num>9999 || num<-1000 && num>-9999)
+        {
+            System.out.println("Enter a valid 4 digit number");
+        }
+        else
+        {
+           int thousand=absnum/1000; 
+           int hundred=(absnum/100)%10;
+           int tens=(absnum/10)%10;
+           int ones=absnum%10;
+
+           if(thousand == ones )
+           {
+               System.out.println("1st and last digit are equal ");
+           }
+            else
+           {
+               System.out.println("1st and last digit are not equal ");
+           }
+        }
+       
+    }
+}
