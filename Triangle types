@@ -1,0 +1,38 @@
+// Online Java Compiler (Editor)
+// Write and run Java online using this editor.
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Checking valid Triangle...");
+        System.out.println("Enter a value : ");
+        double a=sc.nextDouble();
+        System.out.println("Enter b value : ");
+        double b=sc.nextDouble();
+        System.out.println("Enter c value : ");
+        double c=sc.nextDouble();
+        
+        if((a + b > c) && (a + c > b) && (b +c > a ))
+        {
+        System.out.println("the values form a valid triangle");
+
+            if(a==b && b==c)
+            {
+                System.out.println("Equilateral triangle");
+            }
+
+          else  if(a==b || b==c || c==a)
+            {
+                System.out.println("Isocelus  triangle");
+            }
+
+            else
+          {
+              System.out.println("Scalane triangle");
+          }
+        }
+        else {
+            System.out.println("The given side lengths DO NOT form a valid triangle.");
+        }
+    }
+}
