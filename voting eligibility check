@@ -1,0 +1,19 @@
+// Online Java Compiler (Editor)
+// Write and run Java online using this editor.
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the Age :  ");
+        int age=sc.nextInt();
+        if(age<18)
+        {
+            System.out.println("Ineligible for voting...");
+        }
+         else
+        {
+            System.out.println("eligible for voting...");
+        }
+        
+    }
+}
