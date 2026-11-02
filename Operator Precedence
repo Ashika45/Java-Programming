@@ -1,0 +1,11 @@
+// Online Java Compiler (Editor)
+// Write and run Java online using this editor.
+
+class Main {
+    public static void main(String[] args) {
+        double a=10,b=25;
+        System.out.println(a*b-10/a);
+        System.out.println((a*b-10)/10);
+        
+    }
+}
