@@ -1,0 +1,23 @@
+// Online Java Compiler (Editor)
+// Write and run Java online using this editor.
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a character :  ");
+        char ch=sc.next().charAt(0);
+        char lower=Character.toLowerCase(ch);
+        if((lower >='a') && (lower<='m'))
+        {
+            System.out.println("char lies between a and m");
+        }
+        else if((lower >='n') && (lower<='z'))
+        {
+            System.out.println("char lies between n and z");
+        }
+        else
+        {
+             System.out.println("Not a valid character");
+        }
+    }
+}
