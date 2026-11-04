@@ -1,0 +1,47 @@
+// Online Java Compiler (Editor)
+// Write and run Java online using this editor.
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        System.out.println("Enter an amount : ");
+        Scanner sc=new Scanner(System.in);
+        int amt=sc.nextInt();
+
+        if(amt < 0)
+        {
+            System.out.println("Enter a valid amount ...");
+        }
+        else
+        {
+            System.out.println("The entered amt is valid...");
+
+            if(amt%2000==0)
+            {
+                System.out.println("The amount can be evenly divided into 2000");
+            }
+            else
+            {
+                System.out.println("The amount cannot be evenly divided into 2000");
+            }
+
+             if(amt%500==0)
+            {
+                System.out.println("The amount can be evenly divided into 500");
+            
+            }
+             else
+            {
+                System.out.println("The amount cannot be evenly divided into 500");
+            }
+
+              if(amt%100==0)
+            {
+                System.out.println("The amount can be evenly divided into 100");
+        }
+             else
+            {
+                System.out.println("The amount cannot be evenly divided into 100");
+            }
+    }
+    }
+}
