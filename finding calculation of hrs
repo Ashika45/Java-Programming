@@ -1,0 +1,30 @@
+// Online Java Compiler (Editor)
+// Write and run Java online using this editor.
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        
+        System.out.println("Enter hours (0-23): ");
+        int hr=sc.nextInt();
+
+        System.out.println("Enter minutes (0-60): ");
+        int min=sc.nextInt();
+
+        if(min>=60)
+        {
+            hr+=min/60;
+            min=min%60;
+        }
+        hr=hr%24;
+        String period = (hr<12) ?  " AM " : " PM " ;
+    
+        int displayhr=hr%12;
+        if(displayhr == 0)
+        {
+            displayhr=12;
+        }
+        
+        System.out.println("hr : "+displayhr + " min : "+min +  period );
+    }
+}
