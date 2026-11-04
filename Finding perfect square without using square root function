@@ -1,0 +1,43 @@
+// Online Java Compiler (Editor)
+// Write and run Java online using this editor.
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        System.out.println("Finding the perfect square... ");
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the number : ");
+        int num=sc.nextInt();
+
+        if(num<0)
+        {
+            System.out.println("Imperfect square");
+        }
+
+        if(num==0 || num==1)
+        {
+            System.out.println("perfect square");
+        }
+
+        else
+        {
+            boolean isperfect=false;
+            for(int i=1;i*i<=num;i++)
+                {
+                if(i*i==num)
+                {
+                    isperfect=true;
+                    break;
+                }
+                }
+        
+        if(isperfect)
+        {
+            System.out.println("Perfect square");
+        }
+        else
+        {
+            System.out.println("ImPerfect square");
+        }
+        }
+    }
+}
