@@ -1,0 +1,43 @@
+// Online Java Compiler (Editor)
+// Write and run Java online using this editor.
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a day (1-31) : ");
+        int day=sc.nextInt();
+        System.out.println("Enter a month (1-12) : ");
+        int month=sc.nextInt();
+
+        boolean isvalid=false;
+        if(month>=1 && month <=12)
+        {
+            if(month==2)
+            {
+                if(day>=1 && day<=28)
+                isvalid=true;
+            }
+            else if(month==4 || month==6 || month==9 || month==11 )
+            {
+              if(day>=1 && day<=30)
+                    isvalid=true;
+            }
+            else
+            {
+                if(day>=1 && day<=31)
+                    isvalid=true;
+            }
+        }
+
+        if(isvalid)
+        {
+            System.out.println("valid date");
+        }
+        else
+        {
+            System.out.println("Invalid date");
+        }
+    }
+}
+            
