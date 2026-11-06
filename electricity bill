@@ -1,0 +1,36 @@
+// Online Java Compiler (Editor)
+// Write and run Java online using this editor.
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the Units consumed : ");
+        int units=sc.nextInt();
+        double billamt=0.0;
+
+        if(units<=100)
+        {
+            billamt=2.50*units;
+        }
+
+         else if(units<=200)
+        {
+            billamt=4.50*units;
+        }
+
+        else if(units<=400)
+        {
+            billamt=6.00*units;
+        }
+
+        else
+        {
+            billamt=8.00*units;
+        }
+
+        System.out.println("the total bill amount is : " + billamt );
+
+    }
+}
+            
