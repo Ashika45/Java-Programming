@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("--- AP Verification System ---");
+        System.out.print("Enter three numbers: ");
+        double a = sc.nextDouble();
+        double b = sc.nextDouble();
+        double c = sc.nextDouble();
+        
+        // Formula: 2 * b == a + c
+        if (2 * b == a + c) {
+            System.out.println("Result: Yes! It forms an Arithmetic Progression (AP).");
+            System.out.println("Common Difference (d) is: " + (b - a));
+        } else {
+            System.out.println("Result: No! It does NOT form an AP.");
+        }
+        
+        sc.close();
+    }
+}
