@@ -1,0 +1,42 @@
+// Online Java Compiler (Editor)
+// Write and run Java online using this editor.
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the Alphabetic character : ");
+       char ch=sc.next().charAt(0);
+        switch(ch)
+            {
+                case 'A':
+                case'a' :
+                    System.out.println("vowel-A");
+                    break;
+
+                case 'E':
+                case 'e':
+                    System.out.println("vowel-E");
+                    break;
+
+                case 'I' :
+                case 'i':
+                    System.out.println("vowel-I");
+                    break;
+
+                case 'O':
+                case 'o':
+                    System.out.println("vowel-O");
+                    break;
+
+                case 'U':
+                case 'u':
+                    System.out.println("vowel-U");
+                    break;
+
+                default:
+                    System.out.println("Consonant");
+            }
+        
+    }
+}
