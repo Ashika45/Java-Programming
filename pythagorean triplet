@@ -1,0 +1,29 @@
+// Online Java Compiler (Editor)
+// Write and run Java online using this editor.
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a value : ");
+        int a=sc.nextInt();
+        System.out.println("Enter b value : ");
+        int b=sc.nextInt();
+        System.out.println("Enter c value : ");
+        int c=sc.nextInt();
+
+        int sqa= a*a;
+        int sqb=b*b;
+        int sqc=c*c;
+
+        if(sqa+sqb==sqc || sqb+sqc==sqa || sqc+sqa==sqb)
+        {
+            System.out.println("The values forms a pythagorean triplet");
+        }
+        else
+        {
+            System.out.println("not form pythagorean triplet");
+        }
+    }
+}
+            
