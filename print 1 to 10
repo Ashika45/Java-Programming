@@ -1,0 +1,11 @@
+// Online Java Compiler (Editor)
+// Write and run Java online using this editor.
+
+class Main {
+    public static void main(String[] args) {
+        for(int i=1;i<=10;i++)
+            {
+                System.out.println(i);
+            }
+    }
+}
