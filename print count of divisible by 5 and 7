@@ -1,0 +1,18 @@
+// Online Java Compiler (Editor)
+// Write and run Java online using this editor.
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int count=0;
+        for(int i=1;i<=500;i++)
+            {   
+               if(i%5==0 && i%7==0)
+               {
+                   count++;
+               }
+            }
+        System.out.println(count);
+    }
+}
