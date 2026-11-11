@@ -1,0 +1,35 @@
+// Online Java Compiler (Editor)
+// Write and run Java online using this editor.
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter num 1 : ");
+        int num1=sc.nextInt();
+        System.out.println("Enter num 2 : ");
+        int num2=sc.nextInt();
+        int a=Math.abs(num1);
+        int b=Math.abs(num2);
+        
+        if(a==0 || b==0)
+        {
+             System.out.println("Hcf is : "+Math.max(a,b));   
+        }
+        else
+        {
+            int hcf=1;
+
+            int limit=Math.min(a,b);
+            for(int i=1;i<=limit;i++)
+                {
+                if(a%i==0 && b%i==0)
+                {
+                    hcf=i;
+                    
+                }
+                }
+            System.out.println("hcf is : " + hcf);
+        }
+    }
+}
