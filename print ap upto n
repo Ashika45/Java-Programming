@@ -1,0 +1,34 @@
+// Online Java Compiler (Editor)
+// Write and run Java online using this editor.
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        
+        System.out.println("Enter a  : ");
+        int a = sc.nextInt();
+
+        System.out.println("Enter d : ");
+        int d = sc.nextInt();
+
+        System.out.println("Enter n : ");
+        int n = sc.nextInt();
+
+        if(n<=0)
+        {
+            System.out.println(" negative number ");
+        }
+
+        else
+        {
+            int currentterm=a;
+            for(int i=1;i<=n;i++)
+                {
+                System.out.println("current term is :"+currentterm);
+                currentterm=currentterm+d;
+                }
+        }
+            
+    }
+}
